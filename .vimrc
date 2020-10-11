@@ -5,7 +5,7 @@ filetype indent plugin on
 " localvimrc config
 let g:localvimrc_whitelist=['/home/shawn/singularity-workspace/*/',]
 
-"syntax on
+syntax on
 
 "set tags=tags;
 set tags=tags;,/usr/include/tags,/usr/local/include/tags
@@ -43,6 +43,7 @@ setlocal fileformat=unix
 set cursorline
 "hi CursorLine   cterm=NONE ctermfg=white guibg=gray guifg=white ctermbg=236
 hi CursorLine   cterm=NONE guibg=gray ctermbg=234
+hi CursorLineNr    term=bold cterm=bold ctermfg=012 gui=bold
 
 
 ""   YCM   ""
@@ -85,7 +86,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 
-Plugin 'Valloric/YouCompleteMe' ", {'for': 'c++'}
+" Plugin 'Valloric/YouCompleteMe' ", {'for': 'c++'}
 
 Plugin 'scrooloose/nerdtree'
 
@@ -97,6 +98,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'embear/vim-localvimrc'
 
 "Plugin 'Lokaltog/vim-powerline'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 
 " All of your Plugins must be added before the following line

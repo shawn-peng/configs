@@ -8,7 +8,7 @@ let g:localvimrc_whitelist=['/home/shawn/singularity-workspace/*/',]
 syntax on
 
 "set tags=tags;
-set tags=tags;,/usr/include/tags,/usr/local/include/tags
+set tags=tags;,/usr/include/tags,/usr/local/include/tags,/mingw64/include/tags
 
 set autochdir
 

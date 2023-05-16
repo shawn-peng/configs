@@ -24,9 +24,9 @@ set laststatus=2
 "set ignorecase
 "set smartcase
 
-"set backspace=indent,eol,start
+set backspace=indent,eol,start
 
-"set autoindent
+set autoindent
 
 "set visualbell
 
@@ -44,6 +44,27 @@ set cursorline
 "hi CursorLine   cterm=NONE ctermfg=white guibg=gray guifg=white ctermbg=236
 hi CursorLine   cterm=NONE guibg=gray ctermbg=234
 hi CursorLineNr    term=bold cterm=bold ctermfg=012 gui=bold
+
+
+""   Keybindings   ""
+nnoremap <F4> :HeaderguardAdd<CR>
+nnoremap <C-j> :bnext<CR>
+nnoremap <C-k> :bprev<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-q> <C-w>q<CR>
+
+
+"" Airline ""
+"let g:airline_layout = 'powerline'
+"set encoding=utf-8
+let g:airline_powerline_fonts=1
+let g:airline_theme='powerlineish'
+let g:airline#extensions#tabline#enabled=1
+
+
+"" NERDTree ""
+let NERDTreeQuitOnOpen=1
+
 
 
 ""   YCM   ""
@@ -99,6 +120,11 @@ Plugin 'embear/vim-localvimrc'
 
 "Plugin 'Lokaltog/vim-powerline'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+Plugin 'drmikehenry/vim-headerguard'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 
 " All of your Plugins must be added before the following line
